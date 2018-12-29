@@ -64,7 +64,7 @@ function control( ) {
     // 0=4, 1=5, 2=3
 
     if( svar1 == svar2 ) {
-        alert( 'Rätt ' + svar1 + ' == ' + svar2 );
+        // alert( 'Rätt ' + svar1 + ' == ' + svar2 );
         match++;
         if( match == 3 ) {
             alert( 'You have matched all the images!' );
@@ -72,7 +72,7 @@ function control( ) {
         }
     }
     else {
-        alert( 'Fel ' + svar1 + ' != ' + svar2 );
+        // alert( 'Fel ' + svar1 + ' != ' + svar2 );
         document.images[ first ].src = "group.jpg";
         document.images[ second ].src = "group.jpg";
         return;
