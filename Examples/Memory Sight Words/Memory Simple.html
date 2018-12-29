@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Sight Words</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<meta property="og:url" content="https://www.bookwidgets.com/play/LCHCCJ" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Sight Words" />
+	<meta property="og:image" content="https://storage.googleapis.com/widget.bookwidgets.com/Default_14.png" />
+	
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="@ibookwidgets"/>
+	<meta name="twitter:title" content="Sight Words"/>
+	<meta name="twitter:image" content="https://storage.googleapis.com/widget.bookwidgets.com/Default_14.png"/>
+	
+	<meta name="twitter:description" content="Memory Game"/>
+	
+	
+    <style type="text/css">
+        html {
+            background: #2A2A2A;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        body {
+            background: #2A2A2A;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        body.resizable {
+           overflow: hidden;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        .fixedsize #sizewrapper {
+            position: relative;
+            overflow: hidden;
+        }
+        #sizewrapper {
+            width: 100%;
+            height: 100%;
+        }
+        .fixedsize #centered {
+            position: absolute;
+        }
+        
+        .resizable #centered {
+        }
+        .resizable #contentwrapper {
+            width: 1px;
+            min-width: 100%;
+            height: 100%;
+        }
+
+        .resizable.iPad #contentwrapper {
+            text-align: center;
+        }
+        .resizable #contentwrapper iframe{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+        }
+        .resizable #sizewrapper {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-direction: normal;
+            -moz-box-direction: normal;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-align: start;
+            -moz-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+
+        .resizable #centered {
+            -webkit-box-ordinal-group: 1;
+            -moz-box-ordinal-group: 1;
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+             order: 0;
+            -webkit-box-flex: 0;
+            -moz-box-flex: 0;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            align-self: center;
+        }
+        .fixedsize #contentwrapper {
+            width: 1024px;
+            height: 768px;
+            position: relative;
+
+            -webkit-transform-origin: left top;
+            -moz-transform-origin: left top;
+            -ms-transform-origin: left top;
+            -0-transform-origin: left top;
+            transform-origin: left top;
+        }
+        .fixedsize #coverimage {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #coverimage {
+          max-width: 100%; 
+          max-height: 100%;
+        }
+        #spinner {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .spinner {
+            height:40px;
+            width:40px;
+            -webkit-animation: spinner-rotation .6s infinite linear, spinner-color 1.2s infinite linear alternate;
+            -moz-animation: spinner-rotation .6s infinite linear, spinner-color 1.2s infinite linear alternate;
+            -o-animation: spinner-rotation .6s infinite linear, spinner-color 1.2s infinite linear alternate;
+            animation: spinner-rotation .6s infinite linear, spinner-color 1.2s infinite linear alternate;
+            border-left:6px solid rgba(255,255,255,.15);
+            border-right:6px solid rgba(255,255,255,.15);
+            border-bottom:6px solid rgba(255,255,255,.15);
+            border-top:6px solid rgba(255,255,255,.8);
+            border-radius:100%;
+            top: 4px;
+        }
+        @-webkit-keyframes spinner-rotation {
+            from {-webkit-transform: rotate(0deg);}
+            to {-webkit-transform: rotate(359deg);}
+        }
+        @-moz-keyframes spinner-rotation {
+            from {-moz-transform: rotate(0deg);}
+            to {-moz-transform: rotate(359deg);}
+        }
+        @-o-keyframes spinner-rotation {
+            from {-o-transform: rotate(0deg);}
+            to {-o-transform: rotate(359deg);}
+        }
+        @keyframes spinner-rotation {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(359deg);}
+        }
+        @-webkit-keyframes spinner-color {
+            from {
+                border-left-color: rgba(255,255,255,.15);
+                border-right-color: rgba(255,255,255,.15);
+                border-bottom-color: rgba(255,255,255,.15);
+                border-top:6px solid rgba(255,255,255,.8);
+            }
+            to {
+                border-left-color: rgba(0,0,0,.15);
+                border-right-color: rgba(0,0,0,.15);
+                border-bottom-color: rgba(0,0,0,.15);
+                border-top:6px solid rgba(0,0,0,.8);
+            }
+        }
+        @-moz-keyframes spinner-color {
+            from {
+                border-left-color: rgba(255,255,255,.15);
+                border-right-color: rgba(255,255,255,.15);
+                border-bottom-color: rgba(255,255,255,.15);
+                border-top:6px solid rgba(255,255,255,.8);
+            }
+            to {
+                border-left-color: rgba(0,0,0,.15);
+                border-right-color: rgba(0,0,0,.15);
+                border-bottom-color: rgba(0,0,0,.15);
+                border-top:6px solid rgba(0,0,0,.8);
+            }
+        }
+        @-o-keyframes spinner-color {
+            from {
+                border-left-color: rgba(255,255,255,.15);
+                border-right-color: rgba(255,255,255,.15);
+                border-bottom-color: rgba(255,255,255,.15);
+                border-top:6px solid rgba(255,255,255,.8);
+            }
+            to {
+                border-left-color: rgba(0,0,0,.15);
+                border-right-color: rgba(0,0,0,.15);
+                border-bottom-color: rgba(0,0,0,.15);
+                border-top:6px solid rgba(0,0,0,.8);
+            }
+        }
+        @keyframes spinner-color {
+            from {
+                border-left-color: rgba(255,255,255,.15);
+                border-right-color: rgba(255,255,255,.15);
+                border-bottom-color: rgba(255,255,255,.15);
+                border-top:6px solid rgba(255,255,255,.8);
+            }
+            to {
+                border-left-color: rgba(0,0,0,.15);
+                border-right-color: rgba(0,0,0,.15);
+                border-bottom-color: rgba(0,0,0,.15);
+                border-top:6px solid rgba(0,0,0,.8);
+            }
+        }
+        #widgetframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 0px;
+            background: white;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+            font-weight: 300;
+            color: white;            
+            letter-spacing: 1px;
+        }
+        footer a {
+            color: white;
+        }
+        @media (max-height: 890px) {
+            footer {
+                display: none;
+            }
+        }
+        .inset-shadow-overlay {
+            width: 1024px;
+            height: 768px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: inset 0px -10px 20px 0px rgba(0, 0, 0, 0.75);
+            background: transparent;
+            pointer-events: none;
+        }
+        .hint {
+            color: white;
+            text-align: center;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            position: absolute;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+            font-weight: 300;
+        }
+        @media (max-height: 820px), (max-width: 1024px) {
+            .hint {
+                display: none;
+            }
+        }
+        #fullscreenbtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 53px;
+            height: 53px;
+            cursor: pointer;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA1CAYAAADh5qNwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MENGMEMwODM1QTQxMTFFNDk3MzI5NzhCNTA1MEY4RkYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MENGMEMwODQ1QTQxMTFFNDk3MzI5NzhCNTA1MEY4RkYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowQ0YwQzA4MTVBNDExMUU0OTczMjk3OEI1MDUwRjhGRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowQ0YwQzA4MjVBNDExMUU0OTczMjk3OEI1MDUwRjhGRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmMxz4AAAAHESURBVHja7JqrcoNQEIah5QF4hDwCsi7ISmQlshJZiYxEVvIIPAKyEhmJrDx1cfQwszvzZ5smoaSZ0P47szNwrvvthUtIOHgJ5kkYXF5m2XQX/EEh1FIkulKN/HadDkw/QhGKUISKbuQSftFbANOPUIQiFKEIRShCEYpQhCIUoQi19+Y7HHuLXIjwx0xCEYpQhDr4fWrq91Z+82X6EWq/pm7xsShkpP5L+rWmrfNaHJlTea1lXC5t9a1BrSfmcOI1luPV0tKvNSD5ibVimTNGsJc5Krm0dRJpjHolfeqkVs5bcNq4diPtuHYi83XPCqFaUDV+bQw+FZUUNhzTtwRDK+lPRFMT9RVANnJewxqjTU7aMxmjdmWynvbF+phUgnH9D6OuUVDnFADVwLqpmVcYx6ihmN4ZZEIA6a8BcWB7Eh1INZUPk37nCBpVgXGxGYN7OuhzMs/JnALaG3GcdUQ/taZKMaI4A2gFV0EHXm4hJVNTQ4f2zCA6Ct5AWSTGSV/kvizL8JtIbb0+QjFuwZjOhLyHvmfZ9MXrOxg1rvXgdQMeD8yx1tOT1zevr153MmYHF5wN7O+Mk7pw/r9N+URxFfkUYABmI21xhhqP5wAAAABJRU5ErkJggg==');
+        }
+        #fullscreenbtn.topleft {
+          background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABACAYAAACwVZFQAAAAAXNSR0IArs4c6QAAAjNJREFUeAHtnEFLw0AQhRstqAWVXgQ9eNGrv0F/uj/Di1cLHuyttFCJ79UmlO1kdicBPeQNPN3MTJLmy2wSG5lqcmwzuG6hOXQOnUJjsm8c7BpaQgtoBbVWtaPJhOMH6A469B+kjG5Y44g/oHeI47Z6COgJuoEECxD2RhZXe33S10y3R4wJS2YTuIB7Cn2d4AevWZyGMp8AGc1YYffQtZ+rKAhwetasMN4NZWUE5gR2VparLLIiMF7MZGUEpgQmCxAorq66rl8D282mVlX1kk1yEv7r86jCnJNihQTMouL4BMyBY4UEzKLi+ATMgWOFiu+S1sr0Db3bdW035++736F3V1VY7swkcQFLgOQWBSxHKIkLWAIktyhgOUJJXMASILlFAcsRSuIClgDJLQpYjlAS5xf7z4lPiw4BVZgDxwoJmEXF8QmYA8cKCZhFxfEJmAPHCgmYRcXxCZgDxwoJmEXF8QmYA8cKCZhFxfEJmAPHChW/Nep629L37Y31Yf7CN/Q4VGHBsyRgAhYkEExXhQlYkEAwXRUmYEECwXRVmIAFCQTTi5/0u7bb9eTcld/4h/6F0He/zf77/taUDJITMAELEgimq8IELEggmK7/rQgC05TsAWwbXGfM6VtW2GbMBILHviEwdgCRlRFYEhjbpey6fpStM9osMloQGHvLsF2KzCdARqumMwqnJVumsAOI7JgA+bzR3QDjmL1l+O3FJcTnM9nvpYqVRVi7y5YFRu2wnHZYP+AYRAYl0Y1pAAAAAElFTkSuQmCC');
+          background-size: contain;
+          left: 7px;
+          top: 4px;
+          width: 38px;
+          height: 32px;
+          z-index: 10;
+        }
+        .widget-location-changed #fullscreenbtn.topleft {
+          display: none;
+        }
+        #clonebtn {
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            border: 0;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAASFBMVEUAAABbym////9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym9bym//g0j6AAAAF3RSTlMAAAAPESIzP0RVX2Zvd4iZn6q7zM/d7mu5AhwAAALsSURBVHgB7dfvcusmEAVwTgoqKl0RlsK+/5tWYjU4/pPUk3vJNBPOB2/i1fjnFRBNzMuL+SgvdxG5f898mJeJTGQiE5nIj0fkKh35U67yPZD/vl2/jExkIq+vHdHfBiB/ibxekFeRv4dMooqI/vzPHyOQUxHpxghEFZFujEBUEVFjEKKKiBrjEFXUGIf09RiGqKLGWEQzkYlMZCITmcgPRZ7IN0Cez0Qm8gMQIFSLMxujJwZ8Ju8hQtA4GYdUcWiJA5GY4zkIDUS8jhLZH8gmUrwiNhNAIkLQaK9F39YaLcDL3syLycHssdXdIIipDeIOJCYLKorkAGxsFUPvNS4vcNFpzQxw3oBU7JrNHtrMLeKqB1LEjmjqciBMgC3A+XrpAbYN32vx7WIgr6Z4Y0xZ7hAQw1d7QYrfEd4ArKKBRnvAmgFcaiRwaAOSoWiMZ3OP2OKZoAixiOyI7CoQEnp6DwgM4FIpnsguWLEmhQcIQi1QJHM4J4nZ9q+qOXv3k2x0IpGMieSqeYQgekWWApwIIp83XdN7j9ZEEVu9Mb4QPUYARax4OFak7bqteDQOvdd3V15btW13lbbNzJ5c3ccISCT7pAgiW1DVg4BLryki9eqcUBZJ1uyhZG6Q3xUO/cSzH48sxYxHEg1CeoxmIv9rZJX1e0+yhS9A4lcgqSNi4NOSRTYc8clXiSCRbNfzWd46xyXprNnd1ABQPJ+P56eZRY5ckJI9fPUNKdnaHNsL8grAVgvAlQCXA1zdSaKbKr4j7dOMr94Yvpqk2v6FfQWwigWWisDXT19K2CJarmvgN0i1x6Jvt0hpF0adBOeLE9jqAPYdCazDATfVydtJzJ4Qn0TadEtByxKrCKMoeVvFfR5x1UbCkbVG+/4k9lcmAVOxOJKC3q731kTXD/wZZB/g8n8LZT53U76uQTycBDjOb5G0GbJPIJBFEZdF4sJ6Lthd19zGrFICvUW8SHzmxHv+gj+QKYxHlorfgYzPv349bIpyMfYRAAAAAElFTkSuQmCC);
+            background-color: rgba(42, 42, 42, 0.8);
+            cursor: pointer;
+        }
+        :-webkit-full-screen #fullscreenbtn {
+            display: none;
+        }
+        :-moz-full-screen #fullscreenbtn {
+            display: none;
+        }
+        :-ms-fullscreen #fullscreenbtn {
+            display: none;
+        }
+        :fullscreen #fullscreenbtn {
+            display: none;
+        }
+        @media all and (display-mode: standalone) {
+          #fullscreenbtn {
+            /* display: none; you can still go fullscreen to get rid of status bar */
+          }
+        }
+        .redirect-to-app {
+            display: none;
+        }
+        #fullscreenbtn.no_fullscreen_support  {
+            display: none;
+        }
+
+        
+        body.iPad .hint {
+            font-size: 16px;
+            line-height: 22px;
+            display: initial !important;
+            position: initial;
+            text-align: center;
+        }
+        body.iPad .spinner, body.iPad #fullscreenbtn, body.iPad footer {
+            display: none;
+        }
+        body.fixedsize.iPad #contentwrapper {
+            width: 256px;
+            height: 196px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        body.iPad #coverimage {
+            width: 256px;
+            height: 196px;
+        }
+        body.fixedsize.iPad #centered {
+            margin-left: 50%;
+            top: 150px;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+        }
+        
+        .fixedsize .hide_when_fixedsize, .resizable .hide_when_resizable {
+          display: none;
+        }
+        body.from-file {
+            padding: 10px;
+            color: white;
+        }
+        a {
+            color: #0D94FC;
+        }
+        .messagebox {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+          background: white;
+          padding: 20px;
+          border-radius: 20px;
+          box-shadow: 2px 2px 5px rgba(40, 40, 40, 0.5);
+          min-width: 300px;
+          max-width: 80%;
+          box-sizing: border-box;
+          text-align: center;
+        }
+
+        div.button {
+          display: inline-block;
+          border: 1px solid #3498db;
+          border-radius: 20px;
+          color: #3498db;
+          padding: 10px 30px;
+          margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="resizable phonesupport">
+    
+    <img style='opacity: 0; position: absolute; top:0; left:0; height: 0px; width: 0px;' src="https://storage.googleapis.com/widget.bookwidgets.com/Default_14.png" />
+
+    <div id="sizewrapper">
+      
+      <div id="fullscreenbtn" class="no_fullscreen_support hide_when_resizable"></div>
+      
+      <div id="centered">
+
+        <img src="https://storage.googleapis.com/widget.bookwidgets.com/Default_14.png" id="coverimage">
+        <div id="contentwrapper">
+          <div class="spinner" id="spinner"></div>
+        </div>
+        <div id="hint" class="hint hide_when_resizable"></div>
+      </div>
+    </div>
+
+    <footer class="hide_when_resizable">Created using <a href='https://www.bookwidgets.com'>BookWidgets</a>.</footer>
+
+    <script>var widgetlabel = "Sight Words";</script>
+    <script>var playQuery = "";</script>
+    <script type="text/javascript">
+	window.forwardToApp = true;
+	window.isPreview = ("False" == "True");
+	window.widgetURL = "https://storage.googleapis.com/widget.bookwidgets.com/Memory_Game_136.html?content=XURRXZ8BZWCD_6.js&design=Memory_Game_1671.css&wv=5167839545655296&origin=https%3A%2F%2Fwww.bookwidgets.com&dbg4=724aba2d0366dc0ec74b4f54aa75d764#q=&lfq=";
+	window.appURL = "bookwidgets://LCHCCJ";
+	window.hinttext = "";
+	window.shortcode = "LCHCCJ";
+	window.canonicalurl = "https://www.bookwidgets.com/play/LCHCCJ";
+	window.onlyForSharing = ("False" == "True");
+    </script>
+    <script>var bwMessages = {"MSG_OK": "OK", "MSG_NO_PHONE_SUPPORT": "\u003Ch3\u003EWarning\u003C\u002Fh3\u003E\nThis widget is not optimized to run on phones yet.\u003Cbr\u003E\u003Cbr\u003E\nAsk the widget author to update the widget.\u003Cbr\u003E\u003Cbr\u003E\n\u003Ca target=\"_blank\" href='https:\u002F\u002Fwww.bookwidgets.com\u002Ftutorials\u002Fhow-to-update-widgets-to-new-release'\u003ELearn more here\u003C\u002Fa\u003E."};</script>
+    <script type="text/javascript" src="/a/js/play.js"></script>
+</body>
+</html>
