@@ -67,7 +67,7 @@ function control( ) {
         // alert( 'Rätt ' + svar1 + ' == ' + svar2 );
         match++;
         if( match == 3 ) {
-            alert( 'You have matched all the images!' );
+            alert( 'Hooray!!! You have matched all the images!' );
             location.reload( );
         }
     }
