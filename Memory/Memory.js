@@ -12,6 +12,12 @@ cards[2] = 'b2-3.jpg';
 cards[3] = 'b2-3.jpg';
 cards[4] = 'b0-4.jpg';
 cards[5] = 'b1-5.jpg';
+cards[6] = 'b6-7.jpg';
+cards[7] = 'b6-7.jpg';
+cards[8] = 'b8-9.jpg';
+cards[9] = 'b8-9.jpg';
+cards[10] = 'b10-11.jpg';
+cards[11] = 'b10-11.jpg';
 
 function shuffle( array ) {
 	var currentIndex = array.length;
@@ -66,7 +72,7 @@ function control( ) {
     if( svar1 == svar2 ) {
         // alert( 'Rätt ' + svar1 + ' == ' + svar2 );
         match++;
-        if( match == 3 ) {
+        if( match == 6 ) {
             alert( 'Hooray!!! You have matched all the images!' );
             location.reload( );
         }
